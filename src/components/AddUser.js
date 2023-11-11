@@ -17,7 +17,8 @@ const AddUser = () => {
             .then(res => res.json())
             .then(data => {
                 if(data.acknowledged){
-                    alert('User added successfully')
+                    alert('User added successfully');
+                    event.target.reset();   
                 }
             })
     }
